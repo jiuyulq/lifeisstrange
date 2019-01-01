@@ -1,0 +1,19 @@
+/* pages/feature/feature.wxss */
+.page {
+  display: flex;
+  width: 100%;
+  height:100%;
+}
+
+.buttonList{
+    flex-direction: column;
+    position:relative;
+    display: flex;
+    width:100%;
+    margin-top:30%;
+}
+
+.addbutton{
+  width:70%;
+  margin-top:10px;
+}

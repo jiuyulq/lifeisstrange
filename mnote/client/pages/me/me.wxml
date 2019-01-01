@@ -1,0 +1,6 @@
+<!--pages/me/me.wxml-->
+<view class="page">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+    <text class="nick-name">{{nickName}}</text>
+    <button class="log-button" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="Login">{{button_text}}</button>
+</view>

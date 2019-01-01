@@ -1,0 +1,18 @@
+.home-content{
+    position:relative;
+    width:75%;
+    height:500px;
+    margin: 0 auto;
+    background-image: url(../images/i_bgh.png);
+    background-size: cover;
+}
+
+.home-content form{
+  width:60%;
+  margin:0 auto;
+  padding-top:50px;
+}
+
+#inputPwdMsg, #inputNameMsg{
+  color:#FF0000;
+}

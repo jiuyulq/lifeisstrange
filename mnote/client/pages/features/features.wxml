@@ -1,0 +1,8 @@
+<!--pages/feature/feature.wxml-->
+<view class="page">
+  <view class="buttonList">
+    <button class="addbutton schedual"  bindtap='addSchedual'>添加日程</button>
+    <button class="addbutton plan" bindtap='addPlan'>添加计划</button>
+    <button class="addbutton inspiration" bindtap='addInsNotes'>随手记</button>
+  </view>
+</view>

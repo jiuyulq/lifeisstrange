@@ -1,0 +1,65 @@
+/* pages/plan/plan.wxss */
+@import "../../lib/weui.wxss";
+
+.page-section{
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  color: #808080; 
+  padding-left:15px;
+}
+
+.page-section input{
+  height:17px;
+}
+
+.plan-title {
+  margin-top:0;
+  width: 100%;
+  border-bottom: 1rpx solid #D9D9D9;
+  border-top: 1rpx solid #D9D9D9;
+}
+
+.plan-time {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #D9D9D9;
+  padding:10px 0;
+}
+
+.plan-time text{
+  margin-left:15px;
+  width: 20%
+}
+
+.plan-time picker{
+  width:40%;
+}
+
+
+.plan-location{
+  border-bottom: 1rpx solid #D9D9D9;
+}
+
+.plan-notification-time{
+display: flex;
+flex-direction: row;
+border-bottom: 1rpx solid #D9D9D9;
+padding-top:10px;
+padding-bottom:10px;
+}
+
+.plan-notification-time text{
+    width: 20%;
+}
+.plan-notification-time picker{
+    width: 80%;
+}
+.plan-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top:30px;
+}
+
+.plan-buttons button{
+    margin-left:20px;
+}

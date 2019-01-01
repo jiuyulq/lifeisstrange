@@ -1,0 +1,17 @@
+{
+	"client": "./client",
+	"svr": "./server",
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wxaa3b9e554eae5f9d",
+	"projectname": "mnote",
+	"compileType": "miniprogram",
+	"condition": {}
+}

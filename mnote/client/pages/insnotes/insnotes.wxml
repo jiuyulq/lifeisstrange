@@ -1,0 +1,12 @@
+<!--pages/insnotes/insnotes.wxml-->
+<view class="page">
+
+    <textarea class="word-area" bindblur='bindTextAreaBlur' maxlength="-1" placeholder="写点什么吧" />
+    <image class="choosedImage" src="{{choosedImagePath}}" mode = "aspectFit" style='width:70%'/>
+
+    <view class="buttons">
+        <button class="submit-btn btn"  bindtap='isnoteSubmit'> 提交 </button>
+        <button class="choose-image btn" bindtap='chooseImage'> 图片 </button>
+        <button class="choose-image btn" bindtap='takePhoto'> 拍照 </button>
+    </view>
+</view>

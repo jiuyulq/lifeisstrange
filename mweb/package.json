@@ -1,0 +1,9 @@
+{
+    "name": "mweb",
+    "main": "./app.js",
+    "dependencies": {
+        "express": "*",
+        "body-parser": "*",
+        "mysql": "*"
+    }
+}

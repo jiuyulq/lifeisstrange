@@ -1,0 +1,55 @@
+<!--pages/plan/plan.wxml-->
+<view class="page">
+    <form  bindreset='formReset' bindsubmit='formSubmit'>
+        <view class="page-section plan-title">
+            <input class="weui-input" placeholder="标题" bindinput="titleInput"/>
+        </view>
+
+        <view class="page-section plan-time">
+            <text selectable='false'>开始</text>
+            <picker mode="date" value="{{start_date}}" bindchange="planStartDateChange">
+                <view class="picker">
+                    {{start_date}}
+                </view>
+            </picker>
+            <picker mode="time" value="{{start_time}}" bindchange="planStartTimeChange">
+                <view class="picker">
+                    {{start_time}}
+                </view>
+            </picker>
+        </view>
+
+        <view class="page-section plan-time">
+            <text selectable='false'>结束</text>
+            <picker mode="date" value="{{end_date}}" bindchange="planEndDateChange">
+                <view class="picker">
+                    {{end_date}}
+                </view>
+            </picker>
+            <picker mode="time" value="{{end_time}}" bindchange="planEndTimeChange">
+                <view class="picker">
+                    {{end_time}}
+                </view>
+            </picker>
+        </view>
+
+        <view class="page-section plan-location">
+            <input class="weui-input" placeholder="地点" bindinput="locationInput"/>
+        </view>
+
+        <view class="page-section plan-notification-time">
+            <text selectable='false'>间隔</text>
+            <picker value="{{notificationIndex}}" range="{{notificationArray}}" bindchange="planNotiChange">
+                <view class="picker">
+                    {{notificationArray[notificationIndex]}}
+                </view>
+            </picker>
+        </view>
+
+        <view class="page-section plan-buttons">
+            <button form-type="reset">重置</button>
+            <button form-type="submit">提交</button>
+        </view>
+
+    </form>
+</view>

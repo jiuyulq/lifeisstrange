@@ -1,0 +1,25 @@
+<!--pages/index/index.wxml-->
+<view class="page">
+
+    <view class="head">
+        <view class="time-display">
+            <view class="time-date">{{Year}}年{{Month}}月{{Day}}日</view>
+            <view class="time-time">{{Hour}}:{{Minute}}</view>
+        </view>
+
+        <view class="add-display">
+            <image src='images/plus.png' bindtap='jumpToFeatures'></image>
+        </view>
+    </view>
+
+    <view class="content-display">
+        <view class="list-item" wx:for="{{schedual_plans}}" wx:for-index="spIndex" wx:key="*this">
+            <view class="content-list-time">{{schedual_plans[spIndex][2]}}</view>
+            <view class="content-list-detail">
+                <view class="detail-title">{{schedual_plans[spIndex][0]}}</view>
+                <view class="detail-location">{{schedual_plans[spIndex][1]}}</view>
+            </view>
+        </view>
+    </view>
+
+</view>

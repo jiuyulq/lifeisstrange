@@ -1,0 +1,65 @@
+/* pages/schedual/schedual.wxss */
+@import "../../lib/weui.wxss";
+
+.page-section{
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  color: #808080; 
+  padding-left:15px;
+}
+
+.page-section input{
+  height:17px;
+}
+
+.schedual-title {
+  margin-top:0;
+  width: 100%;
+  border-bottom: 1rpx solid #D9D9D9;
+  border-top: 1rpx solid #D9D9D9;
+}
+
+.schedual-time {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #D9D9D9;
+  padding:10px 0;
+}
+
+.schedual-time text{
+  margin-left:15px;
+  width: 20%
+}
+
+.schedual-time picker{
+  width:40%;
+}
+
+
+.schedual-location{
+  border-bottom: 1rpx solid #D9D9D9;
+}
+
+.schedual-notification-time{
+display: flex;
+flex-direction: row;
+border-bottom: 1rpx solid #D9D9D9;
+padding-top:10px;
+padding-bottom:10px;
+}
+
+.schedual-notification-time text{
+    width: 20%;
+}
+.schedual-notification-time picker{
+    width: 80%;
+}
+.schedual-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top:30px;
+}
+
+.schedual-buttons button{
+    margin-left:20px;
+}

@@ -1,0 +1,41 @@
+<!--pages/schedual/schedual.wxml-->
+<view class="page">
+    <form  bindreset='formReset'  report-submit bindsubmit='formSubmit'>
+        <view class="page-section schedual-title">
+            <input class="weui-input" placeholder="标题" bindinput="titleInput"/>
+        </view>
+
+        <view class="page-section schedual-time">
+            <text selectable='false'>时间</text>
+            <picker mode="date" value="{{date}}" bindchange="schedualDateChange">
+                <view class="picker">
+                    {{date}}
+                </view>
+            </picker>
+            <picker mode="time" value="{{time}}" bindchange="schedualTimeChange">
+                <view class="picker">
+                    {{time}}
+                </view>
+            </picker>
+        </view>
+
+        <view class="page-section schedual-location">
+            <input class="weui-input" placeholder="地点" bindinput="locationInput"/>
+        </view>
+
+        <view class="page-section schedual-notification-time">
+            <text selectable='false'>提醒</text>
+            <picker value="{{notificationIndex}}" range="{{notificationArray}}" bindchange="schedualNotiChange">
+                <view class="picker">
+                    {{notificationArray[notificationIndex]}}
+                </view>
+            </picker>
+        </view>
+
+        <view class="page-section schedual-buttons">
+            <button formType="reset">重置</button>
+            <button formType="submit">提交</button>
+        </view>
+
+    </form>
+</view>
